@@ -9,7 +9,7 @@ import { Profile } from './profile/Profile';
 import { Statistics } from './satistic/Statistics';
 import { FriendList } from './friends/FriendList';
 
-    console.log(data)
+    // console.log(data)
 
 // console.log(user)
 export const App = () => {
