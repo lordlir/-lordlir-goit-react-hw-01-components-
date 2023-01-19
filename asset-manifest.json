@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/lordlir-goit-react-hw-01-components/static/css/main.54d71a43.css",
+    "main.js": "/lordlir-goit-react-hw-01-components/static/js/main.ff5faff3.js",
+    "index.html": "/lordlir-goit-react-hw-01-components/index.html",
+    "main.54d71a43.css.map": "/lordlir-goit-react-hw-01-components/static/css/main.54d71a43.css.map",
+    "main.ff5faff3.js.map": "/lordlir-goit-react-hw-01-components/static/js/main.ff5faff3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.54d71a43.css",
+    "static/js/main.ff5faff3.js"
+  ]
+}
