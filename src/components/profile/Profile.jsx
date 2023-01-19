@@ -1,9 +1,9 @@
-// import user from '../../user.json'
-// {username, tag, location, avatar, stats } user
+
 import profile from'./Profile.module.css'
+import PropTypes from "prop-types"
 
 export const Profile = ({ location, username, tag, stats }) => {
-    // className={profileCss}
+
    const { followers, views, likes } =  stats
   return ( <div className={profile.profile}>
   <div className={profile.description}>
@@ -34,3 +34,9 @@ export const Profile = ({ location, username, tag, stats }) => {
 </div>)
 }
 
+Profile.propTypes = {
+    location: PropTypes.string.isRequired,
+    username: PropTypes.string.isRequired,
+    tag: PropTypes.string.isRequired,
+    stats: PropTypes.object.isRequired
+}

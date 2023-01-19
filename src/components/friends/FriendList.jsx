@@ -1,3 +1,7 @@
+import PropTypes from "prop-types"
+
+import { FriendListItem } from "components/friendsItem/FriendListItem"
+
 export const FriendList = ({ friends }) => {
     return (
 
@@ -6,27 +10,11 @@ export const FriendList = ({ friends }) => {
 avatar,
 name,
 isOnline,
-id,}) => <li className="item" key={id}>
-                    {isOnline ? <span style={{ backgroundColor: "green" , width: 10 ,height:10, display: 'block' } }className="status"></span> : <span style={{backgroundColor: "red", width: 10 ,height:10, display: 'block'} }className="status"></span>}
-                <img className="avatar" src={avatar} alt={name} width="48" />
-                    <p className="name">{ name}</p>
-            </li>)}
-
-
+id, }) => <FriendListItem avatar={avatar} name={name} isOnline={isOnline} key={id} />)}
         </ul>
-        // <ul classNameName="stat-list">
-        //     {stats.map(({id, label, percentage}) => {
-        //         return (
-        //             <li classNameName="item" key={id}>
-        //                 <span classNameName="label">{ label }</span>
-        //                 <span classNameName="percentage">{ percentage }</span>
-        //             </li>)
-        //         })}
+           )
+}
 
-        // </ul>
-
-
-
-
-    )
+FriendList.propTypes = {
+    friends: PropTypes.arrayOf(PropTypes.exact({ name: PropTypes.string, avatar: PropTypes.string, id: PropTypes.number, isOnline: PropTypes.bool })).isRequired
 }
